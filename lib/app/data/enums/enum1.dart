@@ -1,1 +1,0 @@
-enum PaymentsMethod { pix, ted }
