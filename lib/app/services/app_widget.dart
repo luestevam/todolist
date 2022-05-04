@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_list/app/core/ui/todo_list_ui_config.dart';
 import 'package:todo_list/app/modules/splash/auth/auth_mudule.dart';
 import 'package:todo_list/app/modules/splash/splash_page.dart';
 
@@ -31,8 +32,9 @@ class _AppWidgetState extends State<AppWidget> {
     return MaterialApp(
       title: 'Todo List',
       initialRoute: '/login',
+      theme: TodoListUiConfig.theme,
       routes: {...AuthModule().routers},
-      home: SplashPage(),
+      home: const SplashPage(),
     );
   }
 }
