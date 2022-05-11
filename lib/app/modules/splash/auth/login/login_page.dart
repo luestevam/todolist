@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/button_list.dart';
-import 'package:flutter_signin_button/button_view.dart';
-import 'package:todo_list/app/core/widget/todo_list_logo.dart';
+import 'package:flutter_signin_button/flutter_signin_button.dart';
+import '../../../../core/widget/todo_list_logo.dart';
+import '../../../../core/widget/todo_list_field.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({Key? key}) : super(key: key);
+  LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,26 +18,33 @@ class LoginPage extends StatelessWidget {
                   minWidth: constraints.maxWidth),
               child: IntrinsicHeight(
                 child: Column(mainAxisSize: MainAxisSize.min, children: [
-                  const SizedBox(
+                  SizedBox(
                     height: 10,
                   ),
-                  const TodoListLogo(),
+                  TodoListLogo(),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         horizontal: 40, vertical: 20),
                     child: Form(
                       child: Column(
                         children: [
-                          TextFormField(),
-                          const SizedBox(height: 20),
-                          TextFormField(),
-                          const SizedBox(height: 10),
+                          TodoListField(
+                            label: 'E-mail',
+                          ),
+                          SizedBox(height: 20),
+                          TodoListField(
+                            label: 'Senha',
+                            obscureText: true,
+                          ),
+                          SizedBox(height: 10),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               TextButton(
                                 onPressed: () {},
-                                child: const Text('Esqueceu Sua Senha'),
+                                child: Text(
+                                  'Esqueceu Sua Senha',
+                                ),
                               ),
                               ElevatedButton(
                                 onPressed: () {},
@@ -57,7 +64,7 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 20),
+                  SizedBox(height: 20),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
@@ -75,7 +82,7 @@ class LoginPage extends StatelessWidget {
                           SignInButton(
                             Buttons.Google,
                             text: "Continue com Google",
-                            padding: const EdgeInsets.all(5),
+                            padding: EdgeInsets.all(5),
                             shape: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none,
@@ -85,10 +92,10 @@ class LoginPage extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              const Text('Não tem conta?'),
+                              Text('Não tem conta?'),
                               TextButton(
                                 onPressed: () {},
-                                child: const Text('Cadastre-se'),
+                                child: Text('Cadastre-se'),
                               ),
                             ],
                           ),
