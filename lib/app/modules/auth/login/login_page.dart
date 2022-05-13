@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
-import '../../../../core/widget/todo_list_logo.dart';
-import '../../../../core/widget/todo_list_field.dart';
+
+import '../../../core/widget/todo_list_field.dart';
+import '../../../core/widget/todo_list_logo.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({Key? key}) : super(key: key);
@@ -94,7 +95,9 @@ class LoginPage extends StatelessWidget {
                             children: [
                               Text('Não tem conta?'),
                               TextButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.of(context).pushNamed('/register');
+                                },
                                 child: Text('Cadastre-se'),
                               ),
                             ],
