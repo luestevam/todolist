@@ -42,7 +42,7 @@ class RegisterPage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Container(
+          SizedBox(
             height: MediaQuery.of(context).size.width * .5,
             child: const FittedBox(
               child: TodoListLogo(),
@@ -55,22 +55,22 @@ class RegisterPage extends StatelessWidget {
               child: Column(
                 children: [
                   TodoListField(label: 'E-mail'),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   TodoListField(
                     label: 'Senha',
                     obscureText: true,
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   TodoListField(
                     label: 'Confirmar Senha',
                     obscureText: true,
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Align(
                     alignment: Alignment.bottomRight,
                     child: ElevatedButton(
                       onPressed: () {},
-                      child: Padding(
+                      child: const Padding(
                         padding: EdgeInsets.all(10),
                         child: Text('Salvar'),
                       ),

@@ -1,9 +1,6 @@
-import 'dart:ffi';
-
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:synchronized/synchronized.dart';
-import 'package:todo_list/app/core/database/migration.dart/migration.dart';
 import 'package:todo_list/app/core/database/sqlite_migration_factory.dart';
 
 class SqliteConnectionFactory {

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "214897520166",
+    "project_id": "todo-list-1a7dc",
+    "storage_bucket": "todo-list-1a7dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214897520166:android:c8cea4054f6225663040e7",
+        "android_client_info": {
+          "package_name": "br.com.estevam.todo_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214897520166-bom3sg30ocmk1s4i9ri21pgbj0aeamjp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.estevam.todo_list",
+            "certificate_hash": "f8cf53827e93470a0fd1e9d208006104c876a74d"
+          }
+        },
+        {
+          "client_id": "214897520166-bh764pilkbklr77qo8cpr02anaf70ola.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_DNw3_J-tJ66rBaj8l_TLowVczU6-veY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214897520166-bh764pilkbklr77qo8cpr02anaf70ola.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

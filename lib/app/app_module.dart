@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todo_list/app/core/database/sqlite_connection_factory.dart';
-import 'package:todo_list/app/services/app_widget.dart';
+import 'package:todo_list/app/app_widget.dart';
 
 class AppModule extends StatelessWidget {
   const AppModule({Key? key}) : super(key: key);

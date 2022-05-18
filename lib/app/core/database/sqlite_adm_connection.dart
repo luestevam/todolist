@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:todo_list/app/core/database/sqlite_connection_factory.dart';
 
 class SqliteAdmConnection with WidgetsBindingObserver {
+  @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     final connection = SqliteConnectionFactory();
 

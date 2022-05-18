@@ -5,7 +5,7 @@ import '../../../core/widget/todo_list_field.dart';
 import '../../../core/widget/todo_list_logo.dart';
 
 class LoginPage extends StatelessWidget {
-  LoginPage({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,36 +14,33 @@ class LoginPage extends StatelessWidget {
         builder: (context, constraints) {
           return SingleChildScrollView(
             child: ConstrainedBox(
-              constraints: BoxConstraints(
-                  minHeight: constraints.maxHeight,
-                  minWidth: constraints.maxWidth),
+              constraints: BoxConstraints(minHeight: constraints.maxHeight, minWidth: constraints.maxWidth),
               child: IntrinsicHeight(
                 child: Column(mainAxisSize: MainAxisSize.min, children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  TodoListLogo(),
+                  const TodoListLogo(),
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 40, vertical: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                     child: Form(
                       child: Column(
                         children: [
                           TodoListField(
                             label: 'E-mail',
                           ),
-                          SizedBox(height: 20),
+                          const SizedBox(height: 20),
                           TodoListField(
                             label: 'Senha',
                             obscureText: true,
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               TextButton(
                                 onPressed: () {},
-                                child: Text(
+                                child: const Text(
                                   'Esqueceu Sua Senha',
                                 ),
                               ),
@@ -65,11 +62,11 @@ class LoginPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Expanded(
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color(0xffF0F3F7),
+                        color: const Color(0xffF0F3F7),
                         border: Border(
                           top: BorderSide(
                             width: 2,
@@ -79,11 +76,11 @@ class LoginPage extends StatelessWidget {
                       ),
                       child: Column(
                         children: [
-                          SizedBox(height: 30),
+                          const SizedBox(height: 30),
                           SignInButton(
                             Buttons.Google,
                             text: "Continue com Google",
-                            padding: EdgeInsets.all(5),
+                            padding: const EdgeInsets.all(5),
                             shape: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30),
                               borderSide: BorderSide.none,
@@ -93,12 +90,12 @@ class LoginPage extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text('Não tem conta?'),
+                              const Text('Não tem conta?'),
                               TextButton(
                                 onPressed: () {
                                   Navigator.of(context).pushNamed('/register');
                                 },
-                                child: Text('Cadastre-se'),
+                                child: const Text('Cadastre-se'),
                               ),
                             ],
                           ),
